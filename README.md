@@ -64,3 +64,9 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+## Shortcuts
+Create Controller but need to have Model - php artisan admin:make TestController --model=App\\Models\\Course
+Create new table using migration, for new API - php artisan make:migration create_lessons_table then llo on the database\migrations folder, after editing the migration fields run -php artisan migrate to create in the database
+Create Admin Controller - php artisan admin:make LessonController --model=App\\Models\\Lesson
